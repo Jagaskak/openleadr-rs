@@ -102,7 +102,7 @@ To execute them locally, run:
 docker compose up db -d     # start up a Postgres DB in the background
 cargo sqlx migrate run # apply the DB scheme
 # load default credentials for integration testing of the client library
-psql -U openadr -W openadr -h localhost openadr < fixtures/test_user_credentials.sql
+psql -U openadr -W openadr -h localhost openadr < fixtures/openadr_testsuite_user.sql
 cargo test --workspace      # execute the tests
 ```
 
